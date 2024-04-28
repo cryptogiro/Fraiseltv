@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraisel TV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .site-title {
+            color: #333;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: #555;
+        }
+
+        .search-form {
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .buttons-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .info-button {
+            background-color: #28a745;
+        }
+
+        .donate-button {
+            background-color: #ffc107;
+        }
+
+        .collaborators-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .collaborators-title {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .collaborator {
+            margin-bottom: 10px;
+        }
+
+        .visitor-count {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .background-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <img class="background-img" src="imagenes/wp8438611.jpg" alt="Background Image">
+
+    <div class="container">
+        <header class="site-header">
+            <h1 class="site-title">Fraisel TV</h1>
+        </header>
+
+        <div class="content">
+            <h2 class="section-title">Anime en Línea Gratis</h2>
+
+            <!-- Formulario de búsqueda -->
+            <form class="search-form" method="get" action="https://anime-latino.com/" role="search">
+                <input type="search" class="search-input" placeholder="Buscar Anime" name="s" autocomplete="off">
+                <button type="submit" class="search-button">BUSCAR</button>
+            </form>
+
+            <!-- Botones -->
+            <div class="buttons-container">
+                <a href="#" class="button">Fraisel TV</a>
+                <a href="#" class="button info-button">Información</a>
+                <a href="#" class="button donate-button">Donar</a>
+            </div>
+
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5299881478272758"
+            crossorigin="anonymous"></script>
+
+
+
+            <!-- Sección de colaboradores -->
+            <div class="collaborators-section">
+                <h2 class="collaborators-title">Colaboradores de Fraisel TV</h2>
+                <div class="collaborator">Fraisel TV Studios</div>
+                <div class="collaborator">Fraisel TV Podcast</div>
+            </div>
+
+            <!-- Contador de visitas -->
+            <div class="visitor-count">¡Bienvenido! Eres el visitante número <span id="visitor-count">0</span>.</div>
+        </div>
+    </div>
+
+    <script>
+        // Contador de visitas
+        let visitorCount = 0;
+        function incrementVisitorCount() {
+            visitorCount++;
+            document.getElementById('visitor-count').innerText = visitorCount;
+        }
+        // Simular incremento de visitas cada segundo
+        setInterval(incrementVisitorCount, 1000);
+    </script>
+</body>
+</html>
+        
